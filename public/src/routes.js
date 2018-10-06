@@ -27,14 +27,14 @@ module.exports = function (navi) {
         })
     }
 
-    function gallery(req, res) {
-        let nav4 = navi.route("gallery")
-        let hero4 = navi.hero("gallery")
-        res.render('gallery', {
-            nav4,
-            hero4
-        })
-    }
+    // function gallery(req, res) {
+    //     let nav4 = navi.route("gallery")
+    //     let hero4 = navi.hero("gallery")
+    //     res.render('gallery', {
+    //         nav4,
+    //         hero4
+    //     })
+    // }
 
     function aboutUs(req, res) {
         let nav5 = navi.route("aboutUs")
@@ -58,7 +58,7 @@ module.exports = function (navi) {
         home,
         services,
         projects,
-        gallery,
+        // gallery,
         aboutUs,
         contactUs
     }

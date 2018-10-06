@@ -27,19 +27,19 @@ function hero(input){
         return "/../assets/home.jpg"
     }
     else if(input === 'services'){
-        return "/../assets/rawpixel-603021-unsplash.jpg"
+        return "/../assets/services.jpg"
     }
     else if(input === 'projects'){
-        return input
+        return '/../assets/projects.jpg'
     }
-    else if(input === 'gallery'){
-        return input
-    }
+    // else if(input === 'gallery'){
+    //     return input
+    // }
     else if(input === 'aboutUs'){
-        return input
+        return '/../assets/about-us.jpg'
     }
     else if(input === 'contactUs'){
-        return input
+        return '/../assets/contactus.jpg'
     }
     
 

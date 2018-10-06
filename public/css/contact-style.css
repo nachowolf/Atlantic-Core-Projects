@@ -1,0 +1,14 @@
+.contact-header{
+    text-align:center;
+    font-size:1.5em;
+}
+
+.contact ul{
+font-style: italic;
+padding-left:50px;
+font-weight: bold;
+}
+
+.contact h3{
+    padding-left:15px;
+}

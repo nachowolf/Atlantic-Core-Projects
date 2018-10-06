@@ -24,7 +24,7 @@ app.use(express.static('public'))
 app.get('/', route.home);
 app.get('/services', route.services);
 app.get('/projects', route.projects)
-app.get('/gallery', route.gallery);
+// app.get('/gallery', route.gallery);
 app.get('/aboutUs', route.aboutUs);
 app.get('/contactUs', route.contactUs);
 

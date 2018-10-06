@@ -1,0 +1,10 @@
+.about-header{
+        text-align:center;
+        font-size:1.5em;
+}
+
+.about ul{
+    font-style: italic;
+    padding-left:15px;
+    font-weight: bold;
+}
