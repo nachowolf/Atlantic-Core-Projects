@@ -8,3 +8,15 @@
     padding-left:15px;
     font-weight: bold;
 }
+
+.about label{
+    text-align:center;
+}
+
+.about a{
+    color:gray;
+}
+
+.about a:hover{
+    color:blue;
+}

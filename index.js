@@ -6,7 +6,7 @@ const navigation = require('./public/src/navigation.js')
 const app = express()
 const navi = navigation()
 const route = routes(navi)
-
+const fs = require('fs')
 
 
 app.use(bodyParser.json())
@@ -27,6 +27,30 @@ app.get('/projects', route.projects)
 // app.get('/gallery', route.gallery);
 app.get('/aboutUs', route.aboutUs);
 app.get('/contactUs', route.contactUs);
+
+app.get('/certs/BEE.pdf', function(request, response){
+    let tempFile1="certs/BEE.pdf";
+    fs.readFile(tempFile1, function (err,data){
+       response.contentType("application/pdf");
+       response.send(data);
+    });
+  });
+
+  app.get('/certs/COR14.3-RegCert.pdf', function(request, response){
+    let tempFile2="certs/COR14.3 - Reg Cert.pdf";
+    fs.readFile(tempFile2, function (err,data){
+       response.contentType("application/pdf");
+       response.send(data);
+    });
+  });
+
+  app.get('/certs/LOGS-AtlanticCoreProjects.pdf', function(request, response){
+    let tempFile3="certs/LOGS - Atlantic Core Projects.pdf";
+    fs.readFile(tempFile3, function (err,data){
+       response.contentType("application/pdf");
+       response.send(data);
+    });
+  });
 
 let PORT = process.env.PORT || 3003
 
