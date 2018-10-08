@@ -52,6 +52,14 @@ app.get('/certs/BEE.pdf', function(request, response){
     });
   });
 
+  app.get('/certs/CIDB-Registration.pdf', function(request, response){
+    let tempFile4="certs/CIDB Registration.pdf";
+    fs.readFile(tempFile4, function (err,data){
+       response.contentType("application/pdf");
+       response.send(data);
+    });
+  });
+
 let PORT = process.env.PORT || 3003
 
 app.listen(PORT, function () {

@@ -2,7 +2,9 @@
         text-align:center;
         font-size:1.5em;
 }
-
+.about{
+    text-align: center;
+}
 .about ul{
     font-style: italic;
     padding-left:15px;
@@ -15,8 +17,16 @@
 
 .about a{
     color:gray;
+    font-size:1.1em;
 }
 
 .about a:hover{
     color:blue;
+}
+
+.about embed{
+    position: relative;
+    width:70%;
+    padding-bottom:50px;
+
 }
