@@ -1,4 +1,4 @@
-module.exports = function (navi) {
+module.exports = function (navi, pdfs) {
 
     function home(req, res) {
         let nav1 = navi.route("home")
@@ -37,11 +37,16 @@ module.exports = function (navi) {
     // }
 
     function aboutUs(req, res) {
+        let file = req.params.file
         let nav5 = navi.route("aboutUs")
         let hero5 = navi.hero("aboutUs")
+        let pdf = pdfs.pdf(file)
+        let heads = pdfs.heads(file)
         res.render('about', {
             nav5,
-            hero5
+            hero5,
+            pdf,
+            heads
         })
     }
 
@@ -54,7 +59,14 @@ module.exports = function (navi) {
         })
     }
 
+    // function files(req, res){
+    //     let file = req.params.file;
+    //     pdfs.pdf(file)
+    //     res.redirect('/aboutUs')
+    // }
+
     return {
+        // files,
         home,
         services,
         projects,

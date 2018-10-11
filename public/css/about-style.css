@@ -30,3 +30,10 @@
     padding-bottom:50px;
 
 }
+
+.pdf-nav{
+    margin-bottom:30px;
+}
+.pdf-nav button:hover{
+  background-color:white;
+}

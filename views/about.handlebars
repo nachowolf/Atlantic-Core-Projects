@@ -8,7 +8,7 @@
         <header class='about-header'><h1><strong>About Us</strong></h1></header>
         <div class='about'>
 
-    <label for="CRN"><a href="/certs/COR14.3-RegCert.pdf" target="_blank">Company Registration Number: 2018/292055/07</a></label>
+    {{!-- <label for="CRN"><a href="/certs/COR14.3-RegCert.pdf" target="_blank">Company Registration Number: 2018/292055/07</a></label>
 <div name='CRN'><embed src="/certs/COR14.3-RegCert.pdf" width='100%' height="200"></embed>
 </div>
 
@@ -25,7 +25,19 @@ Codes, 100% Black Femaled owned</a></label>
     <label for="CIDB"><a href="/certs/CIDB-Registration.pdf" target="_blank">CIDB CRN: 10174616 Grade: 1GB & 1CE</a></label>
 <div name='CIDBA'><embed src="/certs/CIDB-Registration.pdf" width='100%' height="200"></embed>
 </div>
-<ul> Registration Number: MAAA0644892</ul>
+<ul> Registration Number: MAAA0644892</ul> --}}
+
+<nav class='pdf-nav'>
+ 
+  <a href="/aboutUs/CRN"><button>CRN</button></a>
+  <a href="/aboutUs/BEE"><button>BEE</button></a>
+  <a href="/aboutUs/COIDA"><button>COIDA</button></a>
+  <a href="/aboutUs/CIDB"><button>CIDB</button></a>
+</nav>
+        <label for="file"><a href="{{pdf}}" target="_blank">{{heads}}</a></label>
+<div name='file'><embed src="{{pdf}}" width='100%' height="1000"></embed>
+</div>
+
 
 </div>
    

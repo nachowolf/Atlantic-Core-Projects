@@ -1,11 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
-const routes = require('./public/src/routes.js')
-const navigation = require('./public/src/navigation.js')
+const routes = require('./src/routes.js');
+const navigation = require('./src/navigation.js');
+const pdfDocs = require('./src/pdf-routes.js');
+const pdfs = pdfDocs()
 const app = express()
 const navi = navigation()
-const route = routes(navi)
+const route = routes(navi, pdfs)
 const fs = require('fs')
 
 
@@ -27,6 +29,7 @@ app.get('/projects', route.projects)
 // app.get('/gallery', route.gallery);
 app.get('/aboutUs', route.aboutUs);
 app.get('/contactUs', route.contactUs);
+app.get('/aboutUs/:file', route.aboutUs)
 
 app.get('/certs/BEE.pdf', function(request, response){
     let tempFile1="certs/BEE.pdf";
