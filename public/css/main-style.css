@@ -175,6 +175,10 @@ left:0%;
 left:10%;
 }
 
+.footer-three a:hover {
+color: silver;
+}
+
 .facebook i{
     background-color:#3b5998;
     width:50px;
